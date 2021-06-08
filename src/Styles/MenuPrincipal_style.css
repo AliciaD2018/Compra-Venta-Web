@@ -5,10 +5,24 @@
         transform: translate(-50%,-50%);
         width: 100%;
         height: 100%;
-        /*
-        background-image: url('../Images/buy.jpg');
+        background-color: aquamarine;
+        background-image:  url('../Images/buy.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        */
+        
 
 }
+.capa {
+    border: 3px solid red;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 150px;
+    left: 500px;
+    background-color: azure;}
+
+.oblique {
+    font-style: oblique;
+    color: rgb(54, 11, 211);
+    border-radius: "5%";
+  }

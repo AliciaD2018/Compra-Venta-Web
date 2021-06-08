@@ -13,12 +13,45 @@ class Menu extends Component {
    
   render() {  
     return (
-      <div align="center">
-          Menu Principal 
+      <div align="center" class="MenuMainContainer">
+          
+          <h1 class = "oblique"> Cambio de clave </h1> 
+        
+      <hr></hr>
+      <br/>
+      <br/>
+
+      <view>
+        <form  class="capa" >
+          <label  >
+            <h4 >Correo de Usuario:  </h4>
+            <input type="text" name="name" required/>
+          </label>
+          <input type="submit" value="Cargar" />
+    
+
+          <br/>
+          <br/>
+          <label>
+              <h4> Ingresar clave anterior:  </h4>
+              <input type="text" name="name" required/>
+          </label>
+
+          <label>
+              <h4> Ingresar nueva clave:  </h4>
+              <input type="text" name="name" />
+            
+          </label>
+          
+          <br/>
+          <br/>
+          <input type="submit" value="Guardar" />
+
+        </form>
+      </view>
       </div>
     );
   }
 }
 export default Menu;
-
 
