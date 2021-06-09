@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class shopping_history extends Component {
+class Shopping_history extends Component {
     constructor(props) {
         super(props);
         this.value=""
@@ -9,11 +9,11 @@ class shopping_history extends Component {
     render() {
         return (
             <div>
-             
+            <h1 class = "oblique" align='center'> Historial de Compras </h1> 
             </div>
             
         );
     }
 }
 
-export default shopping_history;
+export default Shopping_history;
