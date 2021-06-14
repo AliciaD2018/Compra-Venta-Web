@@ -1,5 +1,6 @@
 const baseURL = "http://localhost:4000";
 
+
 const updateUser = async (usuario, name, lastname, tel, exactAddress, biography) => {
     const url = baseURL+'/api/updateUserData';
     const body = {
@@ -81,9 +82,54 @@ const getUserCollections = async (user) => {
     }
 }
 
+
+const getAllProducts = async (user) => {
+    const url = baseURL + '/api/getAllProducts';
+    const body = { user: user};
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body)
+        });
+        let json = await response.json(); // json={ valido: <true|false> }
+        return json;
+    } catch (error) {
+        console.log(error);
+        return false;
+    }
+}
+
+const getUserProducts = async (user) => {
+    console.log('entra')
+    const url = baseURL + '/api/getUserProducts';
+    const body = { user: user};
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(body)
+        });
+        let json = await response.json(); // json={ valido: <true|false> }
+        return json;
+    } catch (error) {
+        console.log(error);
+        return false;
+    }
+}
+
+
 export {
     updateUser,
     updatePassw,
     validateUser,
-    getUserCollections
+    getUserCollections,
+    getAllProducts,
+    getUserProducts
 }

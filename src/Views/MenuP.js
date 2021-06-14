@@ -42,7 +42,7 @@ class MenuP extends Component {
             <Button  variant="btn btn-success" onClick={() => this.ir_cambiarClave()}> Cambiar_clave </Button>
         
 
-          <h4> Historial de Compras </h4>
+          <h4> Historial de Productos </h4>
           
             <Button  variant="btn btn-success" onClick={() => this.ir_historial()}> Historial </Button>
         

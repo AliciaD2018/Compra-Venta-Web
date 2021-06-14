@@ -7,7 +7,7 @@ class DataPersonal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            usuario: 'lola',
+            usuario: 'diazr',
             nombre: '',
             apellido: '',
             telefono: '',

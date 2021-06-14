@@ -52,7 +52,7 @@ class Login extends Component {
 
     render() {
         return (
-            <div align='center'>
+            <div align='center' className='MenuMainContainer'>
                 <h1> Sistema Administrador de Compra-Venta</h1>
                 <form>
                     <br />
