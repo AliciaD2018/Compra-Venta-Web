@@ -74,5 +74,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 Correr Backend
 
-`npm run dev`
+`npm run dev` or `node index.js`
 
