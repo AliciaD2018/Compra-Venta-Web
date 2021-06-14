@@ -1,5 +1,5 @@
 # Compra-Venta-Web
-Aplicación móvil con funcionalidades Web
+Extensión Web de Aplicación mobile.
 
 
 ## Available Scripts
